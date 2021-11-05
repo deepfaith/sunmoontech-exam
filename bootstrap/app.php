@@ -53,15 +53,3 @@ $app->singleton(
 */
 
 return $app;
-
-/*
-|--------------------------------------------------------------------------
-| Debug helper
-|--------------------------------------------------------------------------
-|
-| The following lines contains the debugging helper tool
-|
-*/
-function di($data){
-    print "<pre>";	print_r($data);	print "</pre>";
-}
