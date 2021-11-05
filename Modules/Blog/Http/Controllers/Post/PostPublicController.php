@@ -67,7 +67,7 @@ class PostPublicController extends Controller
         return $this->sendCustomResponse(200,
             [
                 'message' => __('blog::blog.success'),
-                'data' => [$post]
+                'data' => $post
             ]
         );
     }

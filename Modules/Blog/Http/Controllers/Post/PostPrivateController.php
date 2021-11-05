@@ -74,7 +74,7 @@ class PostPrivateController extends Controller
             return $this->sendCustomResponse(200,
                 [
                     'message' => __('blog::blog.added_success'),
-                    'data' => [$saved_post]
+                    'data' => $saved_post
                 ]
             );
         }else {
@@ -148,7 +148,7 @@ class PostPrivateController extends Controller
             return $this->sendCustomResponse(200,
                 [
                     'message' => __('blog::blog.deleted_success'),
-                    'data' => [$post]
+                    'data' => $post
                 ]
             );
         } else {

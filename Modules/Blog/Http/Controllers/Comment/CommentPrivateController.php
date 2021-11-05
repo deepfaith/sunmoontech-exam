@@ -88,7 +88,7 @@ class CommentPrivateController extends Controller
             return $this->sendCustomResponse(200,
                 [
                     'message' => __('blog::blog.added_success'),
-                    'data' => [$saved_comment]
+                    'data' => $saved_comment
                 ]
             );
         }else {
@@ -181,7 +181,7 @@ class CommentPrivateController extends Controller
             return $this->sendCustomResponse(200,
                 [
                     'message' => __('blog::blog.deleted_success'),
-                    'data' => [$comment]
+                    'data' => $comment
                 ]
             );
         } else {

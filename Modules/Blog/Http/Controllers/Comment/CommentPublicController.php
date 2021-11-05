@@ -83,7 +83,7 @@ class CommentPublicController extends Controller
         return $this->sendCustomResponse(200,
             [
                 'message' => __('blog::blog.success'),
-                'data' => [$comment]
+                'data' => $comment
             ]
         );
     }
